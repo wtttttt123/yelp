@@ -1,0 +1,307 @@
+body {
+    font-family: 'Montserrat', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    box-sizing: border-box;
+    margin:0;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h1,h2{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+input[type=text] {
+    border:2px solid #ccc; 
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333; 
+}
+
+input[type=button], input[type=submit] {
+    background-color: #eee;
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px;
+    font-family: 'Montserrat', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+li{
+    margin: 10px;
+    font-family: Helvetica;
+}
+
+/*event.html*/
+
+#loc{
+    margin: 20px;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+
+#mappp {
+    width: 600px;
+    height: 400px;
+    float:left;
+    padding:20px;
+    border:2px solid #ff9933;
+    margin:20px;
+}
+
+
+#ppp{
+    float:right;
+    font-size: 17px;
+    width: 30%;
+    padding:35px;
+    border:2px solid #ff9933;
+    margin:20px;
+
+}
+#mapcontainer:after{
+    content: "."; 
+     display: block; 
+     height: 0; 
+     clear: both; 
+     visibility: hidden;
+}
+
+
+
+
+/*index.html*/
+
+
+
+#indexh{
+    position: fixed;
+    right:20vw;
+    top:30vh;
+    color: white;
+    border: 0;
+}
+
+
+#container1 {
+  position: relative;
+  width: 50%;
+  float: right;
+}
+#container2 {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+
+#searchpic:after{
+    content: "."; 
+     display: block; 
+     height: 0; 
+     clear: both; 
+     visibility: hidden;
+}
+
+.hoverimg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  display: inline;
+}
+
+.hovertxt {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/*song.html*/
+
+.sub{
+    padding: 10px;
+    color: #ff9933;
+}
+
+.navcontainer{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+    border-bottom:2px solid blue; 
+    border-top:2px solid blue; 
+}
+
+#sss{
+    width: 150px;
+    font-size: 1em;
+    font-family: 'Montserrat';
+    border:0 none;
+
+}
+
+#stoe{
+    text-decoration: none;
+    background-color: #ff9933;
+}
+
+.backk{
+    padding: 10px;
+    background-color: #6666ff;
+    flex-grow:1;
+    text-align: end;
+
+}
+
+.reeform{
+    background-color: #6666ff;
+    padding: 10px;
+    flex-grow:1;
+    
+}
+
+#sname{
+    padding-left:20px;
+    margin-bottom: 0;
+    margin-top:20px;
+}
+#artistimg {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+#simg{
+    padding:20px;
+    float:left;
+    width: 40%;
+    border:2px solid #ff9933;
+    margin-left:20px;
+    }
+
+#output{
+    float:right;
+    font-size: .5em;
+    width: 50%;
+    padding:10px;
+    border:2px solid #ff9933;
+    margin-right:20px;
+}    
+
+#backb{
+    width: 80px;
+    height: 50px;
+    margin-left:400px;
+}
+
+
+#relart{
+    padding:20px;
+    font-size: .3em;
+    border:2px solid #ff9933;
+    margin:20px;
+
+}
+#rep{
+    font-size: 3em;
+}
+
+#relart li{
+    display: inline-block;
+    margin: 30px;
+}
+
+
+#scontainer:after{
+    content: "."; 
+     display: block; 
+     height: 0; 
+     clear: both; 
+     visibility: hidden;
+}
+
+
+
+
+/*login.html*/
+#loginh{
+    background-color: #6666ff;
+}
+
+
+#login{
+    position: fixed;
+    right:42vw;
+    top:40vh;
+}
+
+#loginb{
+    background-image: url("/img/222.jpg");
+}
+
+
+
+/*responsive design*/
+@media (max-width: 1140px) {
+    #mappp {
+    display: block;
+    width:90%;
+    }
+    #ppp {
+    display: block;
+    width:90%;
+    margin-left: 10px;
+    }
+}
+
+
+
+@media (max-width: 1085px) {
+    #simg{
+        display: block;
+        width: 90%;
+        margin: auto;
+        float:none;
+        margin-bottom: 20px;
+    }
+
+    #output{
+        display: block;
+        width: 90%;
+        margin: auto;
+        float:none;
+    }    
+}
+
